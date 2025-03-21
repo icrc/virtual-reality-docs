@@ -1,6 +1,6 @@
 # Documentation
 
-> An awesome project.
+> An awesome project 😛.
 
 ```js
 const a = {

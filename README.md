@@ -4,7 +4,8 @@
 
 ```js
 const a = {
-	tet:123
+	test:123
 }
 ```
 [Link](quickstart.md)
+[Link2]({{baseURL}}frog)

@@ -16,6 +16,14 @@
       name: '<strong>Video Pathway</strong>',
       loadSidebar: true,
       subMaxLevel: 2,
+      plugins: [
+        function(hook, vm) {
+          const baseURL = 'https://your-external-website.com/';
+          hook.beforeEach(function(content) {
+            return content.replace(/{{baseURL}}/g, baseURL);
+          });
+        },
+      ],
     }
   </script>
   <!-- Docsify v4 -->

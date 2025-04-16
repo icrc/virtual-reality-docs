@@ -5,6 +5,8 @@ pages:
   script:
   - mkdir .public
   - cp -r * .public
+  - rm .public/vp.js
+  - mv .public/vp.production.js .public/vp.js
   - mv .public public
   artifacts:
     paths:

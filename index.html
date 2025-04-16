@@ -11,6 +11,7 @@
 </head>
 <body>
   <div id="app">Please wait...</div>
+  <script src="./vp.js"></script>
   <script>
     window.$docsify = {
       name: '<strong>Video Pathway</strong>',
@@ -18,9 +19,9 @@
       subMaxLevel: 2,
       plugins: [
         function(hook, vm) {
-          const baseURL = 'https://your-external-website.com/';
+          const baseURL = window?.vp?.baseURL;
           hook.beforeEach(function(content) {
-            return content.replace(/{{baseURL}}/g, baseURL);
+            return content.replace(/{{vpBaseURL}}/g, baseURL);
           });
         },
       ],

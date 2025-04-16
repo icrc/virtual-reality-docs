@@ -8,4 +8,4 @@ const a = {
 }
 ```
 [Link](quickstart.md)
-[Link2]({{baseURL}}frog)
+[Link2]({{vpBaseURL}}onions)

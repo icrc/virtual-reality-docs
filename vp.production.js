@@ -1,3 +1,3 @@
 window.vp = {
-	baseURL: 'https://your-external-production-website.com/'
+	baseURL: 'https://virtual-reality-unit.gitlab.io/vp/#/'
 }

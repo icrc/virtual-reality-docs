@@ -1,13 +1,7 @@
-- Getting started
+- [Getting started](gettingStarted.md)
 
-  - [Quick start](quickstart.md)
+- [Important Concepts](concepts.md)
 
-- Guide
-
-  - [Concepts](concepts.md)
-
-- Action Code
-  - [Overview](actionCodeOverview.md)
-  - [Actions](actionCodeActions.md)
+- [Action Code Reference](actionsReference.md)
 
 - [Frequently Asked Questions](faq.md)

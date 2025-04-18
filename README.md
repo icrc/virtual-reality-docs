@@ -1,6 +1,6 @@
-# Documentation
+# Video Pathway
 
-> An awesome project 😛.
+> Describe the project
 
 ```js
 const a = {
@@ -9,3 +9,7 @@ const a = {
 ```
 [Link](quickstart.md)
 [Link2]({{vpBaseURL}}onions)
+
+?> **Information** This is some information
+
+!> **Warning** This is a warning!

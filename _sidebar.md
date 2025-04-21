@@ -4,6 +4,8 @@
 
 - [Editing Projects](editing.md)
 
-- [Action Code Reference](actionsReference.md)
+- [Action Code - Making Things Happen](actionCode.md)
+
+- [Action Reference](actionReference.md)
 
 - [Frequently Asked Questions](faq.md)

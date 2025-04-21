@@ -4,3 +4,8 @@
 	gap: 0.5em;
 	align-items: center;
 }
+
+article {
+	max-width: 60rem !important;
+	margin: 0 5vw !important;
+}

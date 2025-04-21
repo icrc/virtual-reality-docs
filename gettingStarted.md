@@ -1,6 +1,6 @@
 # Getting Started
 
-Introduction here...
+?> TODO
 
 ## Quick Start
 
@@ -8,6 +8,10 @@ Introduction here...
 <br><br>
 Or go to the edit page and [load an existing project]({{vpBaseURL}}edit)
 
+?> TODO
+
 
 
 ## Learning Video Pathway
+
+?> TODO

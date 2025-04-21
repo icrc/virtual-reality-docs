@@ -21,10 +21,10 @@
       subMaxLevel: 2,
       plugins: [
         function(hook, vm) {
-          const baseURL = window?.vp?.baseURL;
+          const baseURL = window?.vp?.baseURL
           hook.beforeEach(function(content) {
-            return content.replace(/{{vpBaseURL}}/g, baseURL);
-          });
+            return content.replace(/{{vpBaseURL}}/g, baseURL)
+          })
         },
       ],
     }

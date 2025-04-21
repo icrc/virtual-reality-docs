@@ -1,15 +1,6 @@
 # Video Pathway
 
-> Describe the project
+> Project description
 
-```js
-const a = {
-	test:123
-}
-```
-[Link](quickstart.md)
-[Link2]({{vpBaseURL}}onions)
+?> TODO
 
-?> **Information** This is some information
-
-!> **Warning** This is a warning!

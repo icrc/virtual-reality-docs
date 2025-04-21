@@ -8,7 +8,7 @@ Listed here are all the actions available within Video Pathway.
 ## Navigation Actions
 
 
-#### `gotoNextScene`*
+### `gotoNextScene`*
 
 * **Purpose**: Will jump immediately to the scene current defined as the 'next' scene from the current one. The 'next' scene can be changed using [`setNextScene`](#setNextScene)
 
@@ -22,7 +22,7 @@ gotoNextScene
 ```
 
 
-#### `gotoScene`*
+### `gotoScene`*
 
 * **Purpose**: Will jump immediately to the scene with the specified ID. When editing action code in advanced mode, the scene ID can be looked up in the list underneath the action code editing area
 
@@ -37,7 +37,7 @@ gotoScene: 3
 ```
 
 
-#### `setNextScene`
+### `setNextScene`
 
 * **Purpose**: Sets the ID of the scene that will follow when the current scene ends. Scene IDs can be looked up in the list underneath the editing area when editing actions in advanced mode
 
@@ -54,7 +54,7 @@ setNextScene: 7
 
 ## State Manipulation Actions
 
-#### `setStateValue`
+### `setStateValue`
 
 * **Purpose**: Sets the state value with the given key to the value given. The key can contain any characters from `$`, `_`, `a-z`, `A-Z`, `0-9` but must not start with a number
 
@@ -75,7 +75,7 @@ setStateValue: "currentScore", @currentScore + 1
 ```
 
 
-#### `deleteStateValue`
+### `deleteStateValue`
 
 * **Purpose**: Deletes the state value with the given key. The key can contain any characters from `$`, `_`, `a-z`, `A-Z`, `0-9` but cannot start with a number
 
@@ -92,7 +92,7 @@ deleteStateValue: "myValue"
 
 ## Output Related Actions
 
-#### `showMessage`
+### `showMessage`
 
 * **Purpose**: Display a popup message (message can be formatted in [Markdown](https://www.markdownguide.org/cheat-sheet/))
 
@@ -110,7 +110,7 @@ showMessage: "You have answered " + @correctAnswers + " questions correctly"
 ```
 
 
-#### `downloadData`
+### `downloadData`
 
 * **Purpose**: Downloads the given data in CSV format. Row data should be in the form `"Value1|Value2|Value3"` 
 

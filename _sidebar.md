@@ -1,6 +1,4 @@
-- [Getting started](gettingStarted.md)
-
-- [Important Concepts](concepts.md)
+- [Core Concepts](concepts.md)
 
 - [Editing Projects](editing.md)
 

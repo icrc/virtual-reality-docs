@@ -11,7 +11,7 @@ Video Pathway is designed to be (hopefully) simple and intuitive, and this docum
 To get going right now, you can:
 
 * [Click here to start a new project]({{vpBaseURL}}edit/new) - optionally building on top of a template. Or...
-* [Load an existing project]({{vpBaseURL}}edit) - open an existing project and start from there
+* [Load an existing project]({{vpBaseURL}}edit/load) - open an existing project and start from there
 
 
 ### Learning Video Pathway

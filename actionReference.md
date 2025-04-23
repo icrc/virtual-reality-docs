@@ -109,6 +109,8 @@ showMessage: "You have answered " + @correctAnswers + " questions correctly"
 
 ```
 
+?> **Note**: Video playback will pause whilst the message is displayed
+
 
 ### `downloadData`
 

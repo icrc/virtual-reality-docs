@@ -25,3 +25,7 @@
 ### Actions
 
 ?> TODO
+
+## Viewing Projects
+
+?> TODO

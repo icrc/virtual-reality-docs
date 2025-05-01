@@ -30,9 +30,25 @@ To provide interactivity when scenes are being played, we need things to happen 
 
 ### Choices
 
-The user will be presented with a choice where they can select an answer/action/etc. These choices come in various forms (about which more below), and form the basis of all interactivity within a project
+The user will be presented with a choice where they can select an answer/action/etc. These choices come in two forms (block, timed) and form the basis of all interactivity within a project.
 
-?> TODO
+A choice has some accompanying text (a question, description etc.) and from 1 to 4 options to choose between (admittedly, a single option is not much of a choice - but there may be situations where this makes sense). Each selectable option can have an [action](concepts.md#actions) associated with it, that will be carried out when the user clicks the corresponding button.
+
+Every choice has a layout associated with it that determines the placement and style of the displayed buttons. This layout can either be the project default, or a custom one for each choice (perhaps to best suit the current displayed video or frame).
+
+#### Block Choices
+
+With this type, the video will be paused until the choice is made. Whilst paused, it is possible to display:
+
+* The current frame of the video
+* A specific frame of the video
+* A repeating loop of the current
+
+Also, if required, it is possible to delay the pausing of the video until after the choice is displayed.
+
+#### Timed Choices
+
+This type of choice is well suited for quizzes, or 'live' situations in the video that require immediate decisions. A time limit in seconds be specified along with an optional 'timeout' action that will occur should the user not select any of the options within the time limit. The video will continue to play whilst the choice is displayed. A timer indicator will also be displayed. 
 
 ### Action Events
 
@@ -45,5 +61,11 @@ Action events contain:
 
 ## Actions
 
-?> TODO
+'Actions' can occur when a user selects an option from a Choice (or perhaps doesn't select one - in the case of a Timed choice), or an 'Action Event' triggers at its specified time. They can be used to:
+
+* [Control the flow of the video](actionReference.md#navigation-actions) (jumping directly to scenes, setting what scene comes next)
+* [Perform some kind of output](actionReference.md#output-related-actions) (show a message, download data etc.)
+* [Manipulate internal](actionReference.md#state-manipulation-actions) data (state)
+
+A very simple programming language (known as '[Action Code](actionCode.md)') is used to define actions, but for simple flow control actions a simplified process is provided to set them up quickly.
 

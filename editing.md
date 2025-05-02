@@ -8,7 +8,7 @@ The project editing screen consists of three main sections. The topmost one is w
 * **Initial scene** - once you have added scenes to your project, you must specify which scene should be initially played
 * **Default choice layout** - defines the default layout used for [choices](concepts.md#choices) within the project
 
-Use the gear icon (⚙️) next to the default choice layout selector to setup up layout settings (button colours etc.) for the default layout.
+Use the gear icon (⚙️) next to the default choice layout selector to setup up default layout settings (button colours etc.) for the default layout. Default choice layouts and settings may be overridden on a per-choice basis should this be required.
 
 ## Adding Video Sources
 
@@ -37,19 +37,33 @@ The 'Scenes' section is where you will define all of the scenes making up your p
 
 ## Adding Events
 
-?> TODO
+Each 'Scene' on the editing page will have a section titled 'Events'. This is where the events that occur in a scene can be managed. A list of events for the scene is shown - along with icons to perform actions on that event (edit, copy, and delete). Editing of new or existing events takes place in a popup window.
+
+Every event in a scene is either a 'Choice' or an 'Action Event'. For both types of event, a launch time must be defined - this can either be a specific timestamp or the end of the current scene (selected by clicking the **⏯** icon in the 'launch time' field).
 
 ### Choices
 
-?> TODO
+When adding a new 'Choice' in the popup, the following should be specified:
 
-#### Layouts
+* **Choice layout** - this defines what layout for the text and buttons is used for this choice. All standard layout options are provided, as well as a 'default' option which will use the default choice layout defined at the project level (see [above](#editing-projects))
+  * Specific options for the selected layout can be defined in the layout settings popup that can be reached by clicking the gear icon (⚙️). Any layout settings left as 'default' will use the default setting from the project level.
+* **Main text** - this is the text that is displayed above/next to the option buttons for the choice. It can be left blank if you require no text to be shown
+* **Timed choice** - this defines whether or not the choice should have a countdown timer. This option will determine what further options for this Choice are visible:
+  * **Block (non-timed) choice options**
+    * **Pause delay** - this is the number of seconds the system should wait before pausing the video after displaying the choice
+    * **Background** - this defines what should happen with the video behind the displayed choice - display the current frame, display a specific frame, or show a video loop
+  * **Timed choice options**
+    * **Time limit** - this is the time limit the user has to pick an option from the choices available
+    * **Timeout action** - defines the [action(s)](concepts.md#actions) that should occur if the user fails to make a choice before the time limit expires. See '[editing actions](#editing-actions)' below
 
-?> TODO
+Up to four 'choice options' (buttons) can be defined for each Choice. A simple list of these is shown, along with icons to reorder and delete them. Each one should have:
+
+* **Text** - the text to appear on the button. If you wish to add images to the buttons it is possible to use emojis 😜
+* **Action** - the [action(s)](concepts.md#actions) to carry out when the user clicks the button. See '[editing actions](#editing-actions)' below
 
 ### Action Events
 
-?> TODO
+These are 'invisible' events that will simply carry out [actions](concepts.md#actions) at specific times within a scene. A simple [action editing field](#editing-actions) is provided to define the action(s) that will be executed.
 
 ## Viewing Projects
 
@@ -60,3 +74,12 @@ Clicking 'View' in the top menu, or 'View project' from the side menu will take 
 ## Sharing Project Links
 
 The best way for users to access and use your Video Pathway projects is via a sharing URL that you can get by clicking the 'Share View Link' in the side menu. A simple web link will be provided that can be sent out to your users - they will be taken to a viewing screen for your project.
+
+
+## Editing Actions
+
+There are various parts of a project that will be require 'actions' to be defined. Where these are required, you will find specialised 'action editing fields'. These will show a summary of the existing [action code](actionCode.md), along with an edit button that will show an editor popup to assist in their modification.
+
+Simple actions (like jumping to another scene, setting the next scene) are presented in a simplified way in the editor in order to make adding them (hopefully) more efficient. However, should the details of your required action be more complex, an advanced mode is available.
+
+For an exhaustive list of the individual actions available - please see the [Action Reference](actionReference.md).  

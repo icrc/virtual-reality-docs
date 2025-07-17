@@ -1,4 +1,4 @@
 window.vp = {
 	// base URL for the VideoPath app site
-	baseURL: 'https://virtual-reality-unit.gitlab.io/vp/#/'
+	baseURL: 'https://icrc.github.io/virtual-reality/'
 }
